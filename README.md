@@ -1,8 +1,8 @@
 # ArduinoIRMapping
-moves a IR sensor around and builds a map out of the values
+moves a IR sensor around and builds a grey scaled "image" out of the distances
 
-use two servo motors and a sharp ir sensor to map the surface around you.
-The surface will be displayed as "0" (free) or "1" (blocked) on the serial monitor
+use two servo motors and a IR sensor to map the surface around you.
+The surface will be displayed as white (free) or up to black (blocked) on the pygame window
 
 TBD:
-Use a python script to show the map instead of the terminal view
+ensure that all values are received and convertable
