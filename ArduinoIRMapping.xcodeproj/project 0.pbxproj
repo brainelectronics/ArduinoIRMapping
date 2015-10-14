@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF39D9201BCEABEE0005CD56 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF39D91F1BCEABEE0005CD56 /* main.cpp */; };
+		DF39D9221BCEABEE0005CD56 /* LocalLibrary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF39D9211BCEABEE0005CD56 /* LocalLibrary.cpp */; };
+		DF39D9251BCEABEE0005CD56 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = DF39D9241BCEABEE0005CD56 /* Makefile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DF39D91C1BCEABEE0005CD56 /* Index */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Index; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF39D91F1BCEABEE0005CD56 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DF39D9211BCEABEE0005CD56 /* LocalLibrary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LocalLibrary.cpp; sourceTree = "<group>"; };
+		DF39D9231BCEABEE0005CD56 /* LocalLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalLibrary.h; sourceTree = "<group>"; };
+		DF39D9241BCEABEE0005CD56 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		DF39D9271BCEABEE0005CD56 /* Sketchbook.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = Sketchbook.txt; path = Sketchbook/Sketchbook.txt; sourceTree = "<group>"; };
+		DF39D9291BCEABEE0005CD56 /* 4D Systems PICadillo 35T.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "4D Systems PICadillo 35T.xcconfig"; path = "Configurations/4D Systems PICadillo 35T.xcconfig"; sourceTree = "<group>"; };
+		DF39D92A1BCEABEE0005CD56 /* Arduino Due.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Arduino Due.xcconfig"; path = "Configurations/Arduino Due.xcconfig"; sourceTree = "<group>"; };
+		DF39D92B1BCEABEE0005CD56 /* Arduino Duemilanove.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Arduino Duemilanove.xcconfig"; path = "Configurations/Arduino Duemilanove.xcconfig"; sourceTree = "<group>"; };
+		DF39D92C1BCEABEE0005CD56 /* Arduino Leonardo.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Arduino Leonardo.xcconfig"; path = "Configurations/Arduino Leonardo.xcconfig"; sourceTree = "<group>"; };
+		DF39D92D1BCEABEE0005CD56 /* Arduino Mega 2560.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Arduino Mega 2560.xcconfig"; path = "Configurations/Arduino Mega 2560.xcconfig"; sourceTree = "<group>"; };
+		DF39D92E1BCEABEE0005CD56 /* Arduino Micro.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Arduino Micro.xcconfig"; path = "Configurations/Arduino Micro.xcconfig"; sourceTree = "<group>"; };
+		DF39D92F1BCEABEE0005CD56 /* Arduino Pro with ATmega328-3.3V.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Arduino Pro with ATmega328-3.3V.xcconfig"; path = "Configurations/Arduino Pro with ATmega328-3.3V.xcconfig"; sourceTree = "<group>"; };
+		DF39D9301BCEABEE0005CD56 /* Arduino Pro with ATmega328-5V.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Arduino Pro with ATmega328-5V.xcconfig"; path = "Configurations/Arduino Pro with ATmega328-5V.xcconfig"; sourceTree = "<group>"; };
+		DF39D9311BCEABEE0005CD56 /* Arduino Mini with ATmega168.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Arduino Mini with ATmega168.xcconfig"; path = "Configurations/Arduino Mini with ATmega168.xcconfig"; sourceTree = "<group>"; };
+		DF39D9321BCEABEE0005CD56 /* Arduino Mini with ATmega328.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Arduino Mini with ATmega328.xcconfig"; path = "Configurations/Arduino Mini with ATmega328.xcconfig"; sourceTree = "<group>"; };
+		DF39D9331BCEABEE0005CD56 /* Arduino Nano with ATmega168.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Arduino Nano with ATmega168.xcconfig"; path = "Configurations/Arduino Nano with ATmega168.xcconfig"; sourceTree = "<group>"; };
+		DF39D9341BCEABEE0005CD56 /* Arduino Nano with ATmega328.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Arduino Nano with ATmega328.xcconfig"; path = "Configurations/Arduino Nano with ATmega328.xcconfig"; sourceTree = "<group>"; };
+		DF39D9351BCEABEE0005CD56 /* Arduino Robot Control.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Arduino Robot Control.xcconfig"; path = "Configurations/Arduino Robot Control.xcconfig"; sourceTree = "<group>"; };
+		DF39D9361BCEABEE0005CD56 /* Arduino Robot Motor.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Arduino Robot Motor.xcconfig"; path = "Configurations/Arduino Robot Motor.xcconfig"; sourceTree = "<group>"; };
+		DF39D9371BCEABEE0005CD56 /* Arduino Uno.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Arduino Uno.xcconfig"; path = "Configurations/Arduino Uno.xcconfig"; sourceTree = "<group>"; };
+		DF39D9381BCEABEE0005CD56 /* Arduino Yun.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Arduino Yun.xcconfig"; path = "Configurations/Arduino Yun.xcconfig"; sourceTree = "<group>"; };
+		DF39D9391BCEABEE0005CD56 /* chipKIT Uno32.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "chipKIT Uno32.xcconfig"; path = "Configurations/chipKIT Uno32.xcconfig"; sourceTree = "<group>"; };
+		DF39D93A1BCEABEE0005CD56 /* chipKIT Max32.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "chipKIT Max32.xcconfig"; path = "Configurations/chipKIT Max32.xcconfig"; sourceTree = "<group>"; };
+		DF39D93B1BCEABEE0005CD56 /* chipKIT uC32.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "chipKIT uC32.xcconfig"; path = "Configurations/chipKIT uC32.xcconfig"; sourceTree = "<group>"; };
+		DF39D93C1BCEABEE0005CD56 /* DFRobot BLuno.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "DFRobot BLuno.xcconfig"; path = "Configurations/DFRobot BLuno.xcconfig"; sourceTree = "<group>"; };
+		DF39D93D1BCEABEE0005CD56 /* Digispark Tiny Core.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Digispark Tiny Core.xcconfig"; path = "Configurations/Digispark Tiny Core.xcconfig"; sourceTree = "<group>"; };
+		DF39D93E1BCEABEE0005CD56 /* Experimeter Board with MSP430FR5739.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Experimeter Board with MSP430FR5739.xcconfig"; path = "Configurations/Experimeter Board with MSP430FR5739.xcconfig"; sourceTree = "<group>"; };
+		DF39D93F1BCEABEE0005CD56 /* Intel Galileo.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Intel Galileo.xcconfig"; path = "Configurations/Intel Galileo.xcconfig"; sourceTree = "<group>"; };
+		DF39D9401BCEABEE0005CD56 /* Intel Galileo Gen2.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Intel Galileo Gen2.xcconfig"; path = "Configurations/Intel Galileo Gen2.xcconfig"; sourceTree = "<group>"; };
+		DF39D9411BCEABEE0005CD56 /* LaunchPad WiFi with CC3200.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "LaunchPad WiFi with CC3200.xcconfig"; path = "Configurations/LaunchPad WiFi with CC3200.xcconfig"; sourceTree = "<group>"; };
+		DF39D9421BCEABEE0005CD56 /* LaunchPad Stellaris with LM4F120.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "LaunchPad Stellaris with LM4F120.xcconfig"; path = "Configurations/LaunchPad Stellaris with LM4F120.xcconfig"; sourceTree = "<group>"; };
+		DF39D9431BCEABEE0005CD56 /* LaunchPad Tiva C with TM4C123.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "LaunchPad Tiva C with TM4C123.xcconfig"; path = "Configurations/LaunchPad Tiva C with TM4C123.xcconfig"; sourceTree = "<group>"; };
+		DF39D9441BCEABEE0005CD56 /* LaunchPad Tiva C with TM4C129.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "LaunchPad Tiva C with TM4C129.xcconfig"; path = "Configurations/LaunchPad Tiva C with TM4C129.xcconfig"; sourceTree = "<group>"; };
+		DF39D9451BCEABEE0005CD56 /* LaunchPad with MSP430G2553.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "LaunchPad with MSP430G2553.xcconfig"; path = "Configurations/LaunchPad with MSP430G2553.xcconfig"; sourceTree = "<group>"; };
+		DF39D9461BCEABEE0005CD56 /* LaunchPad with MSP430G2231.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "LaunchPad with MSP430G2231.xcconfig"; path = "Configurations/LaunchPad with MSP430G2231.xcconfig"; sourceTree = "<group>"; };
+		DF39D9471BCEABEE0005CD56 /* LaunchPad with MSP430G2452.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "LaunchPad with MSP430G2452.xcconfig"; path = "Configurations/LaunchPad with MSP430G2452.xcconfig"; sourceTree = "<group>"; };
+		DF39D9481BCEABEE0005CD56 /* LaunchPad with MSP430F5529.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "LaunchPad with MSP430F5529.xcconfig"; path = "Configurations/LaunchPad with MSP430F5529.xcconfig"; sourceTree = "<group>"; };
+		DF39D9491BCEABEE0005CD56 /* LaunchPad with MSP430FR5969.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "LaunchPad with MSP430FR5969.xcconfig"; path = "Configurations/LaunchPad with MSP430FR5969.xcconfig"; sourceTree = "<group>"; };
+		DF39D94A1BCEABEE0005CD56 /* Maple Flash revision 3+.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Maple Flash revision 3+.xcconfig"; path = "Configurations/Maple Flash revision 3+.xcconfig"; sourceTree = "<group>"; };
+		DF39D94B1BCEABEE0005CD56 /* Microduino Core with ATmega328-5V.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Microduino Core with ATmega328-5V.xcconfig"; path = "Configurations/Microduino Core with ATmega328-5V.xcconfig"; sourceTree = "<group>"; };
+		DF39D94C1BCEABEE0005CD56 /* Microduino Core32u4 with ATmega328U4-5V.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Microduino Core32u4 with ATmega328U4-5V.xcconfig"; path = "Configurations/Microduino Core32u4 with ATmega328U4-5V.xcconfig"; sourceTree = "<group>"; };
+		DF39D94D1BCEABEE0005CD56 /* Microduino Core+ with ATmega644-5V.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Microduino Core+ with ATmega644-5V.xcconfig"; path = "Configurations/Microduino Core+ with ATmega644-5V.xcconfig"; sourceTree = "<group>"; };
+		DF39D94E1BCEABEE0005CD56 /* Sparkfun Uno.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Sparkfun Uno.xcconfig"; path = "Configurations/Sparkfun Uno.xcconfig"; sourceTree = "<group>"; };
+		DF39D94F1BCEABEE0005CD56 /* Teensy 2.0.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Teensy 2.0.xcconfig"; path = "Configurations/Teensy 2.0.xcconfig"; sourceTree = "<group>"; };
+		DF39D9501BCEABEE0005CD56 /* Teensy 3.0.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Teensy 3.0.xcconfig"; path = "Configurations/Teensy 3.0.xcconfig"; sourceTree = "<group>"; };
+		DF39D9511BCEABEE0005CD56 /* Teensy 3.1.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Teensy 3.1.xcconfig"; path = "Configurations/Teensy 3.1.xcconfig"; sourceTree = "<group>"; };
+		DF39D9521BCEABEE0005CD56 /* Wiring S.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Wiring S.xcconfig"; path = "Configurations/Wiring S.xcconfig"; sourceTree = "<group>"; };
+		DF39D9541BCEABEE0005CD56 /* Arduino.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = Arduino.mk; path = Makefiles/Arduino.mk; sourceTree = "<group>"; };
+		DF39D9551BCEABEE0005CD56 /* Arduino1.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = Arduino1.mk; path = Makefiles/Arduino1.mk; sourceTree = "<group>"; };
+		DF39D9561BCEABEE0005CD56 /* Arduino15avr.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = Arduino15avr.mk; path = Makefiles/Arduino15avr.mk; sourceTree = "<group>"; };
+		DF39D9571BCEABEE0005CD56 /* Arduino15sam.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = Arduino15sam.mk; path = Makefiles/Arduino15sam.mk; sourceTree = "<group>"; };
+		DF39D9581BCEABEE0005CD56 /* Arduino23.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = Arduino23.mk; path = Makefiles/Arduino23.mk; sourceTree = "<group>"; };
+		DF39D9591BCEABEE0005CD56 /* Digispark.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = Digispark.mk; path = Makefiles/Digispark.mk; sourceTree = "<group>"; };
+		DF39D95A1BCEABEE0005CD56 /* EnergiaMSP430.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = EnergiaMSP430.mk; path = Makefiles/EnergiaMSP430.mk; sourceTree = "<group>"; };
+		DF39D95B1BCEABEE0005CD56 /* EnergiaLM4F.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = EnergiaLM4F.mk; path = Makefiles/EnergiaLM4F.mk; sourceTree = "<group>"; };
+		DF39D95C1BCEABEE0005CD56 /* EnergiaCC3200.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = EnergiaCC3200.mk; path = Makefiles/EnergiaCC3200.mk; sourceTree = "<group>"; };
+		DF39D95D1BCEABEE0005CD56 /* Galileo.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = Galileo.mk; path = Makefiles/Galileo.mk; sourceTree = "<group>"; };
+		DF39D95E1BCEABEE0005CD56 /* MapleIDE.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = MapleIDE.mk; path = Makefiles/MapleIDE.mk; sourceTree = "<group>"; };
+		DF39D95F1BCEABEE0005CD56 /* Microduino.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = Microduino.mk; path = Makefiles/Microduino.mk; sourceTree = "<group>"; };
+		DF39D9601BCEABEE0005CD56 /* Mpide.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = Mpide.mk; path = Makefiles/Mpide.mk; sourceTree = "<group>"; };
+		DF39D9611BCEABEE0005CD56 /* Wiring.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = Wiring.mk; path = Makefiles/Wiring.mk; sourceTree = "<group>"; };
+		DF39D9621BCEABEE0005CD56 /* Step1.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = Step1.mk; path = Makefiles/Step1.mk; sourceTree = "<group>"; };
+		DF39D9631BCEABEE0005CD56 /* Step2.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = Step2.mk; path = Makefiles/Step2.mk; sourceTree = "<group>"; };
+		DF39D9641BCEABEE0005CD56 /* Teensy.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = Teensy.mk; path = Makefiles/Teensy.mk; sourceTree = "<group>"; };
+		DF39D9651BCEABEE0005CD56 /* Teensy2.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = Teensy2.mk; path = Makefiles/Teensy2.mk; sourceTree = "<group>"; };
+		DF39D9661BCEABEE0005CD56 /* Teensy3.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = Teensy3.mk; path = Makefiles/Teensy3.mk; sourceTree = "<group>"; };
+		DF39D9671BCEABEE0005CD56 /* Avrdude.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = Avrdude.mk; path = Makefiles/Avrdude.mk; sourceTree = "<group>"; };
+		DF39D9681BCEABEE0005CD56 /* ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		DF39D96A1BCEABEE0005CD56 /* About.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = About.txt; path = About/About.txt; sourceTree = "<group>"; };
+		DF39D96C1BCEABEE0005CD56 /* reset.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = reset.py; path = Utilities/reset.py; sourceTree = "<group>"; };
+		DF39D96D1BCEABEE0005CD56 /* serial1200.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = serial1200.py; path = Utilities/serial1200.py; sourceTree = "<group>"; };
+		DF39D96E1BCEABEE0005CD56 /* embedXcode_prepare */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = embedXcode_prepare; path = Utilities/embedXcode_prepare; sourceTree = "<group>"; };
+		DF39D96F1BCEABEF0005CD56 /* embedXcode_check */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = embedXcode_check; path = Utilities/embedXcode_check; sourceTree = "<group>"; };
+		DF39D9701BCEABEF0005CD56 /* embedXcode_chrono */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = embedXcode_chrono; path = Utilities/embedXcode_chrono; sourceTree = "<group>"; };
+		DF39D9711BCEABEF0005CD56 /* TemplateIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = TemplateIcon.icns; path = Utilities/TemplateIcon.icns; sourceTree = "<group>"; };
+		DF39D9721BCEABEF0005CD56 /* clupload_osx.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = clupload_osx.sh; path = Utilities/clupload_osx.sh; sourceTree = "<group>"; };
+		DF39D9731BCEABEF0005CD56 /* ArduinoIRMapping.ino */ = {isa = PBXFileReference; lastKnownFileType = text; path = ArduinoIRMapping.ino; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		DF39D9111BCEABEE0005CD56 = {
+			isa = PBXGroup;
+			children = (
+				DF39D91E1BCEABEE0005CD56 /* ArduinoIRMapping */,
+				DF39D91D1BCEABEE0005CD56 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF39D91D1BCEABEE0005CD56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF39D91C1BCEABEE0005CD56 /* Index */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF39D91E1BCEABEE0005CD56 /* ArduinoIRMapping */ = {
+			isa = PBXGroup;
+			children = (
+				DF39D91F1BCEABEE0005CD56 /* main.cpp */,
+				DF39D9211BCEABEE0005CD56 /* LocalLibrary.cpp */,
+				DF39D9231BCEABEE0005CD56 /* LocalLibrary.h */,
+				DF39D9241BCEABEE0005CD56 /* Makefile */,
+				DF39D9681BCEABEE0005CD56 /* ReadMe.txt */,
+				DF39D9731BCEABEF0005CD56 /* ArduinoIRMapping.ino */,
+				DF39D9261BCEABEE0005CD56 /* Sketchbook */,
+				DF39D9281BCEABEE0005CD56 /* Configurations */,
+				DF39D9531BCEABEE0005CD56 /* Makefiles */,
+				DF39D9691BCEABEE0005CD56 /* About */,
+				DF39D96B1BCEABEE0005CD56 /* Utilities */,
+			);
+			path = ArduinoIRMapping;
+			sourceTree = "<group>";
+		};
+		DF39D9261BCEABEE0005CD56 /* Sketchbook */ = {
+			isa = PBXGroup;
+			children = (
+				DF39D9271BCEABEE0005CD56 /* Sketchbook.txt */,
+			);
+			name = Sketchbook;
+			sourceTree = "<group>";
+		};
+		DF39D9281BCEABEE0005CD56 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				DF39D9291BCEABEE0005CD56 /* 4D Systems PICadillo 35T.xcconfig */,
+				DF39D92A1BCEABEE0005CD56 /* Arduino Due.xcconfig */,
+				DF39D92B1BCEABEE0005CD56 /* Arduino Duemilanove.xcconfig */,
+				DF39D92C1BCEABEE0005CD56 /* Arduino Leonardo.xcconfig */,
+				DF39D92D1BCEABEE0005CD56 /* Arduino Mega 2560.xcconfig */,
+				DF39D92E1BCEABEE0005CD56 /* Arduino Micro.xcconfig */,
+				DF39D92F1BCEABEE0005CD56 /* Arduino Pro with ATmega328-3.3V.xcconfig */,
+				DF39D9301BCEABEE0005CD56 /* Arduino Pro with ATmega328-5V.xcconfig */,
+				DF39D9311BCEABEE0005CD56 /* Arduino Mini with ATmega168.xcconfig */,
+				DF39D9321BCEABEE0005CD56 /* Arduino Mini with ATmega328.xcconfig */,
+				DF39D9331BCEABEE0005CD56 /* Arduino Nano with ATmega168.xcconfig */,
+				DF39D9341BCEABEE0005CD56 /* Arduino Nano with ATmega328.xcconfig */,
+				DF39D9351BCEABEE0005CD56 /* Arduino Robot Control.xcconfig */,
+				DF39D9361BCEABEE0005CD56 /* Arduino Robot Motor.xcconfig */,
+				DF39D9371BCEABEE0005CD56 /* Arduino Uno.xcconfig */,
+				DF39D9381BCEABEE0005CD56 /* Arduino Yun.xcconfig */,
+				DF39D9391BCEABEE0005CD56 /* chipKIT Uno32.xcconfig */,
+				DF39D93A1BCEABEE0005CD56 /* chipKIT Max32.xcconfig */,
+				DF39D93B1BCEABEE0005CD56 /* chipKIT uC32.xcconfig */,
+				DF39D93C1BCEABEE0005CD56 /* DFRobot BLuno.xcconfig */,
+				DF39D93D1BCEABEE0005CD56 /* Digispark Tiny Core.xcconfig */,
+				DF39D93E1BCEABEE0005CD56 /* Experimeter Board with MSP430FR5739.xcconfig */,
+				DF39D93F1BCEABEE0005CD56 /* Intel Galileo.xcconfig */,
+				DF39D9401BCEABEE0005CD56 /* Intel Galileo Gen2.xcconfig */,
+				DF39D9411BCEABEE0005CD56 /* LaunchPad WiFi with CC3200.xcconfig */,
+				DF39D9421BCEABEE0005CD56 /* LaunchPad Stellaris with LM4F120.xcconfig */,
+				DF39D9431BCEABEE0005CD56 /* LaunchPad Tiva C with TM4C123.xcconfig */,
+				DF39D9441BCEABEE0005CD56 /* LaunchPad Tiva C with TM4C129.xcconfig */,
+				DF39D9451BCEABEE0005CD56 /* LaunchPad with MSP430G2553.xcconfig */,
+				DF39D9461BCEABEE0005CD56 /* LaunchPad with MSP430G2231.xcconfig */,
+				DF39D9471BCEABEE0005CD56 /* LaunchPad with MSP430G2452.xcconfig */,
+				DF39D9481BCEABEE0005CD56 /* LaunchPad with MSP430F5529.xcconfig */,
+				DF39D9491BCEABEE0005CD56 /* LaunchPad with MSP430FR5969.xcconfig */,
+				DF39D94A1BCEABEE0005CD56 /* Maple Flash revision 3+.xcconfig */,
+				DF39D94B1BCEABEE0005CD56 /* Microduino Core with ATmega328-5V.xcconfig */,
+				DF39D94C1BCEABEE0005CD56 /* Microduino Core32u4 with ATmega328U4-5V.xcconfig */,
+				DF39D94D1BCEABEE0005CD56 /* Microduino Core+ with ATmega644-5V.xcconfig */,
+				DF39D94E1BCEABEE0005CD56 /* Sparkfun Uno.xcconfig */,
+				DF39D94F1BCEABEE0005CD56 /* Teensy 2.0.xcconfig */,
+				DF39D9501BCEABEE0005CD56 /* Teensy 3.0.xcconfig */,
+				DF39D9511BCEABEE0005CD56 /* Teensy 3.1.xcconfig */,
+				DF39D9521BCEABEE0005CD56 /* Wiring S.xcconfig */,
+			);
+			name = Configurations;
+			sourceTree = "<group>";
+		};
+		DF39D9531BCEABEE0005CD56 /* Makefiles */ = {
+			isa = PBXGroup;
+			children = (
+				DF39D9541BCEABEE0005CD56 /* Arduino.mk */,
+				DF39D9551BCEABEE0005CD56 /* Arduino1.mk */,
+				DF39D9561BCEABEE0005CD56 /* Arduino15avr.mk */,
+				DF39D9571BCEABEE0005CD56 /* Arduino15sam.mk */,
+				DF39D9581BCEABEE0005CD56 /* Arduino23.mk */,
+				DF39D9591BCEABEE0005CD56 /* Digispark.mk */,
+				DF39D95A1BCEABEE0005CD56 /* EnergiaMSP430.mk */,
+				DF39D95B1BCEABEE0005CD56 /* EnergiaLM4F.mk */,
+				DF39D95C1BCEABEE0005CD56 /* EnergiaCC3200.mk */,
+				DF39D95D1BCEABEE0005CD56 /* Galileo.mk */,
+				DF39D95E1BCEABEE0005CD56 /* MapleIDE.mk */,
+				DF39D95F1BCEABEE0005CD56 /* Microduino.mk */,
+				DF39D9601BCEABEE0005CD56 /* Mpide.mk */,
+				DF39D9611BCEABEE0005CD56 /* Wiring.mk */,
+				DF39D9621BCEABEE0005CD56 /* Step1.mk */,
+				DF39D9631BCEABEE0005CD56 /* Step2.mk */,
+				DF39D9641BCEABEE0005CD56 /* Teensy.mk */,
+				DF39D9651BCEABEE0005CD56 /* Teensy2.mk */,
+				DF39D9661BCEABEE0005CD56 /* Teensy3.mk */,
+				DF39D9671BCEABEE0005CD56 /* Avrdude.mk */,
+			);
+			name = Makefiles;
+			sourceTree = "<group>";
+		};
+		DF39D9691BCEABEE0005CD56 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				DF39D96A1BCEABEE0005CD56 /* About.txt */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		DF39D96B1BCEABEE0005CD56 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DF39D96C1BCEABEE0005CD56 /* reset.py */,
+				DF39D96D1BCEABEE0005CD56 /* serial1200.py */,
+				DF39D96E1BCEABEE0005CD56 /* embedXcode_prepare */,
+				DF39D96F1BCEABEF0005CD56 /* embedXcode_check */,
+				DF39D9701BCEABEF0005CD56 /* embedXcode_chrono */,
+				DF39D9711BCEABEF0005CD56 /* TemplateIcon.icns */,
+				DF39D9721BCEABEF0005CD56 /* clupload_osx.sh */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		DF39D9161BCEABEE0005CD56 /* All */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "all -C \"$(PROJECT)\"";
+			buildConfigurationList = DF39D9761BCEABEF0005CD56 /* Build configuration list for PBXLegacyTarget "All" */;
+			buildPhases = (
+			);
+			buildToolPath = make;
+			dependencies = (
+			);
+			name = All;
+			passBuildSettingsInEnvironment = 1;
+			productName = All;
+		};
+		DF39D9171BCEABEE0005CD56 /* Build */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "build -C \"$(PROJECT)\"";
+			buildConfigurationList = DF39D9791BCEABEF0005CD56 /* Build configuration list for PBXLegacyTarget "Build" */;
+			buildPhases = (
+			);
+			buildToolPath = make;
+			dependencies = (
+			);
+			name = Build;
+			passBuildSettingsInEnvironment = 1;
+			productName = Build;
+		};
+		DF39D9181BCEABEE0005CD56 /* Serial */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "serial -C \"$(PROJECT)\"";
+			buildConfigurationList = DF39D97C1BCEABEF0005CD56 /* Build configuration list for PBXLegacyTarget "Serial" */;
+			buildPhases = (
+			);
+			buildToolPath = make;
+			dependencies = (
+			);
+			name = Serial;
+			passBuildSettingsInEnvironment = 1;
+			productName = Serial;
+		};
+		DF39D9191BCEABEE0005CD56 /* Upload */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "upload -C \"$(PROJECT)\"";
+			buildConfigurationList = DF39D97F1BCEABEF0005CD56 /* Build configuration list for PBXLegacyTarget "Upload" */;
+			buildPhases = (
+			);
+			buildToolPath = make;
+			dependencies = (
+			);
+			name = Upload;
+			passBuildSettingsInEnvironment = 1;
+			productName = Upload;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		DF39D91B1BCEABEE0005CD56 /* Index */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF39D9821BCEABEF0005CD56 /* Build configuration list for PBXNativeTarget "Index" */;
+			buildPhases = (
+				DF39D91A1BCEABEE0005CD56 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Index;
+			productName = Index;
+			productReference = DF39D91C1BCEABEE0005CD56 /* Index */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF39D9121BCEABEE0005CD56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = brainelectronics;
+			};
+			buildConfigurationList = DF39D9151BCEABEE0005CD56 /* Build configuration list for PBXProject "ArduinoIRMapping" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DF39D9111BCEABEE0005CD56;
+			productRefGroup = DF39D91D1BCEABEE0005CD56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF39D9161BCEABEE0005CD56 /* All */,
+				DF39D9171BCEABEE0005CD56 /* Build */,
+				DF39D9181BCEABEE0005CD56 /* Serial */,
+				DF39D9191BCEABEE0005CD56 /* Upload */,
+				DF39D91B1BCEABEE0005CD56 /* Index */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF39D91A1BCEABEE0005CD56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF39D9251BCEABEE0005CD56 /* Makefile in Sources */,
+				DF39D9201BCEABEE0005CD56 /* main.cpp in Sources */,
+				DF39D9221BCEABEE0005CD56 /* LocalLibrary.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DF39D9741BCEABEF0005CD56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF39D9371BCEABEE0005CD56 /* Arduino Uno.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				PATH = "$(PATH):$(PROJECT_DIR)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKETCHBOOK_DIR = "";
+				SKETCH_EXTENSION = ino;
+			};
+			name = Debug;
+		};
+		DF39D9751BCEABEF0005CD56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				PATH = "$(PATH):$(PROJECT_DIR)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKETCHBOOK_DIR = "";
+				SKETCH_EXTENSION = ino;
+			};
+			name = Release;
+		};
+		DF39D9771BCEABEF0005CD56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DF39D9781BCEABEF0005CD56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DF39D97A1BCEABEF0005CD56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		DF39D97B1BCEABEF0005CD56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		DF39D97D1BCEABEF0005CD56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		DF39D97E1BCEABEF0005CD56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		DF39D9801BCEABEF0005CD56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		DF39D9811BCEABEF0005CD56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		DF39D9831BCEABEF0005CD56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		DF39D9841BCEABEF0005CD56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF39D9151BCEABEE0005CD56 /* Build configuration list for PBXProject "ArduinoIRMapping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF39D9741BCEABEF0005CD56 /* Debug */,
+				DF39D9751BCEABEF0005CD56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF39D9761BCEABEF0005CD56 /* Build configuration list for PBXLegacyTarget "All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF39D9771BCEABEF0005CD56 /* Debug */,
+				DF39D9781BCEABEF0005CD56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DF39D9791BCEABEF0005CD56 /* Build configuration list for PBXLegacyTarget "Build" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF39D97A1BCEABEF0005CD56 /* Debug */,
+				DF39D97B1BCEABEF0005CD56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DF39D97C1BCEABEF0005CD56 /* Build configuration list for PBXLegacyTarget "Serial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF39D97D1BCEABEF0005CD56 /* Debug */,
+				DF39D97E1BCEABEF0005CD56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DF39D97F1BCEABEF0005CD56 /* Build configuration list for PBXLegacyTarget "Upload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF39D9801BCEABEF0005CD56 /* Debug */,
+				DF39D9811BCEABEF0005CD56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DF39D9821BCEABEF0005CD56 /* Build configuration list for PBXNativeTarget "Index" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF39D9831BCEABEF0005CD56 /* Debug */,
+				DF39D9841BCEABEF0005CD56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF39D9121BCEABEE0005CD56 /* Project object */;
+}
