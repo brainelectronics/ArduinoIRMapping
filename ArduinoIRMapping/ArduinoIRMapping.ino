@@ -141,7 +141,8 @@ void loop()
         }
         Serial.println();  // send "end of line" to monitor
     }
-    delay(1000);    // move it back or just look at the image
+    moveServos(0, 0);   // move servos back to start position
+    delay(500);    // move it back or just look at the image
 
     //Serial.println("###");  // send "end of horizontal line" to monitor
 }
