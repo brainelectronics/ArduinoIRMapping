@@ -216,6 +216,7 @@
 		AA2A151014172816AA0000FB /* GSM3ShieldV1VoiceProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAAA151014172816AA0000FB /* GSM3ShieldV1VoiceProvider.cpp */; };
 		AA2A151014172816AA0000FC /* GSM3ShieldV1VoiceProvider.h in Sources */ = {isa = PBXBuildFile; fileRef = AAAA151014172816AA0000FC /* GSM3ShieldV1VoiceProvider.h */; };
 		AA2A151014172816AA0000FD /* GSM3SMSService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAAA151014172816AA0000FD /* GSM3SMSService.cpp */; };
+		DF0921FC1BD01C7400BAC274 /* ownLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF0921FA1BD01C7400BAC274 /* ownLib.cpp */; };
 		DF29D9731BCEABEF0005CD56 /* ArduinoIRMapping.ino in Sources */ = {isa = PBXBuildFile; fileRef = DF39D9731BCEABEF0005CD56 /* ArduinoIRMapping.ino */; };
 		DF39D9201BCEABEE0005CD56 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF39D91F1BCEABEE0005CD56 /* main.cpp */; };
 		DF39D98B1BCED7590005CD56 /* Servo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF39D9891BCED7590005CD56 /* Servo.cpp */; };
@@ -431,6 +432,8 @@
 		AAAA151014172816AA0000FB /* GSM3ShieldV1VoiceProvider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GSM3ShieldV1VoiceProvider.cpp; sourceTree = "<group>"; };
 		AAAA151014172816AA0000FC /* GSM3ShieldV1VoiceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSM3ShieldV1VoiceProvider.h; sourceTree = "<group>"; };
 		AAAA151014172816AA0000FD /* GSM3SMSService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GSM3SMSService.cpp; sourceTree = "<group>"; };
+		DF0921FA1BD01C7400BAC274 /* ownLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ownLib.cpp; sourceTree = "<group>"; };
+		DF0921FB1BD01C7400BAC274 /* ownLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ownLib.h; sourceTree = "<group>"; };
 		DF39D91C1BCEABEE0005CD56 /* Index */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Index; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF39D91F1BCEABEE0005CD56 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		DF39D9241BCEABEE0005CD56 /* Makefile */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
@@ -1063,6 +1066,8 @@
 				DF39D91F1BCEABEE0005CD56 /* main.cpp */,
 				DF39D9891BCED7590005CD56 /* Servo.cpp */,
 				DF39D98A1BCED7590005CD56 /* Servo.h */,
+				DF0921FA1BD01C7400BAC274 /* ownLib.cpp */,
+				DF0921FB1BD01C7400BAC274 /* ownLib.h */,
 				DF39D9241BCEABEE0005CD56 /* Makefile */,
 				DF39D9681BCEABEE0005CD56 /* ReadMe.txt */,
 				DF39D9731BCEABEF0005CD56 /* ArduinoIRMapping.ino */,
@@ -1316,6 +1321,7 @@
 				AA2A151014172816AA000018 /* new.h in Sources */,
 				AA2A151014172816AA000019 /* Print.cpp in Sources */,
 				AA2A151014172816AA00001A /* Print.h in Sources */,
+				DF0921FC1BD01C7400BAC274 /* ownLib.cpp in Sources */,
 				AA2A151014172816AA00001B /* Printable.h in Sources */,
 				AA2A151014172816AA00001C /* Server.h in Sources */,
 				AA2A151014172816AA00001D /* Stream.cpp in Sources */,

@@ -25,7 +25,7 @@
 
 // Include application, user and local libraries
 #include "Servo.h"
-
+#include "ownLib.h"
 // Prototypes
 
 
@@ -35,6 +35,7 @@
 // Details	twelve servo objects can be created on most arduino boards
 //
 uint8_t irSense = A0;
+uint8_t statusLED = 13;  // blink LED pin 13
 uint8_t horizontalServoPin = 5;
 uint8_t verticalServoPin = 6;
 uint8_t x = 0;
@@ -53,6 +54,8 @@ void setup()
     Serial.begin(9600);
     
     pinMode(irSense, OUTPUT);
+    pinMode(statusLED, OUTPUT);
+    
     horizontalServo.attach(horizontalServoPin);    // attaches the horizontal servo on horizontalServoPin to the servo object
     verticalServo.attach(verticalServoPin);    // attaches the vertical servo on verticalServoPin to the servo object
     
@@ -60,6 +63,8 @@ void setup()
     verticalServo.write(0);     // tell servo to go to default position
     
     delay(1000);
+    
+    blink(statusLED, 5, 500);   // tell user working status
 }
 
 //
