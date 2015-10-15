@@ -37,9 +37,9 @@ while True: # main game loop
 	except Exception as e:
 		# something strange happend, show the user the problem
 		print("Unbekanntes Problem:", e)
-	finally:
-		pygame.quit()
-		sys.exit()
+	#finally:
+	#	pygame.quit()
+	#	sys.exit()
 	
 	if len(lineRead) >= 7 and ":" in lineRead:	# check that it contains min x0,y0:0
 		sepData = ":"	# seperator between the position and distances
