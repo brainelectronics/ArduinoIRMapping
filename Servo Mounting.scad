@@ -17,9 +17,9 @@ module servoMounting($fn=100)
     {
         cube([42.0, 25.0+7.5, 4.0], center=false);  // bottom
         #translate([3.5, 7.5+7, 4.0]) rotate([00,0,0]) cylinder(h = 15, d = screwHole, center = true);
-        #translate([3.5+22.0, 7.5+7, 4.0]) rotate([00,0,0]) cylinder(h = 15, d = screwHole, center = true);  // mounting hole right
-        #translate([3.5+11.0, 7.5+7+11.0, 4.0]) rotate([00,0,0]) cylinder(h = 15, d = screwHole, center = true); // mounting hole back
-        #translate([3.5+11.0, 7.5+7-11.0, 4.0]) rotate([00,0,0]) cylinder(h = 15, d = screwHole, center = true); // mounting hole back
+        #translate([3.5+22.0, 7.5+7, 4.0]) rotate([0,0,0]) cylinder(h = 15, d = screwHole, center = true);  // mounting hole right
+        #translate([3.5+11.0, 7.5+7+11.0, 4.0]) rotate([0,0,0]) cylinder(h = 15, d = screwHole, center = true); // mounting hole back
+        #translate([3.5+11.0, 7.5+7-11.0, 4.0]) rotate([0,0,0]) cylinder(h = 15, d = screwHole, center = true); // mounting hole back
         
         #translate([3.5+11.0, 7.5+7, 4.0]) rotate([0,0,0]) cylinder(h = 15, d = 7.5, center = true); // center hole
     }
