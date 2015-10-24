@@ -28,6 +28,7 @@ servoRotationDiffLarge+servoRotationDiffSmall != servoLength
    <-Length-->
 <- total Lenght->
 */
+use <Sensor Mounting Arm.scad>;
 
 servoLength = 28.0; // mm
 servoTotalLength = 42.0;    // mm
@@ -42,6 +43,16 @@ screwLength = 15.0; // mm
 screwArm = 3.0;     // mm
 
 duoServoMounting();
+//drawServoArm();
+
+module drawServoArm($fn=100)
+{
+    translate([-10, -servoHeight+5+0.1-(servoTotalLength-servoLength)/2, 0])
+    {   
+        //
+        servoArm();
+    }
+}
 
 module duoServoMounting($fn=100)
 {
@@ -49,10 +60,14 @@ module duoServoMounting($fn=100)
     difference()
     {
         cube([servoTotalLength, servoHeight+(servoTotalLength-servoLength)/2, servoWidth], center=false);   // the servo holder
+        fillet(2, servoWidth*2+1);  // rounded corner (0,0)
+        translate([0, servoHeight+(servoTotalLength-servoLength)/2, 0]) rotate([0, 0, -90])fillet(2, servoWidth*2+1);  // rounded corner (end, end)
         translate([(servoTotalLength-servoLength)/2, -0.5, -0.5])
         {
             #cube([servoLength, servoHeight+1, servoWidth+1], center=false);  // the servo itself, a little bit larger than it is, to fit in ;)
         }
+        translate([servoTotalLength, 0, 0]) rotate([0, 0, 90])fillet(2, servoWidth*2+1);  // rounded corner (0, end)
+        translate([servoTotalLength, servoHeight+(servoTotalLength-servoLength)/2, 0]) rotate([0, 0, 180])fillet(2, servoWidth*2+1);  // rounded corner (end, end)
         
         // holes
         translate([(servoTotalLength-servoLength)/4, screwLength/2, servoWidth/2])
@@ -73,22 +88,27 @@ module duoServoMounting($fn=100)
         {
             rotate([90,0,0])
             {
-                #cylinder(h = (servoTotalLength-servoLength)+1, d = screwArm, center = true);    // back hole of the servo
+                #cylinder(h = (servoTotalLength-servoLength)+10, d = screwArm, center = true);    // back hole of the servo
             }
         }
         translate([(servoTotalLength-servoLength)/2+servoRotationDiffLarge, servoHeight+(servoTotalLength-servoLength)/4, servoWidth/2])
         {
             rotate([90,0,0])
             {
-                #cylinder(h = (servoTotalLength-servoLength)+1, d = screwArm, center = true);    // back hole of the servo
+                #cylinder(h = (servoTotalLength-servoLength)+10, d = screwArm, center = true);    // back hole of the servo
             }
         }
     }
     
+    
     // the x rotation servo holder (standing on top)
-    translate([0, (servoHeight+(servoTotalLength-servoLength)/2)/4, servoWidth]) difference()
+    translate([0, (servoHeight+(servoTotalLength-servoLength)/2-servoWidth)/2, servoWidth]) difference()
     {
         cube([servoTotalLength, servoWidth, servoHeight], center=false);  // the servo holder
+        translate([0, 0, servoWidth])fillet(2, servoWidth*2+1);  // rounded corner (0,0)
+        translate([servoTotalLength, 0, servoWidth]) rotate([0, 0, 90]) fillet(2, servoWidth*2+1);  // rounded corner (end, 0)
+        translate([servoTotalLength, servoWidth, servoWidth]) rotate([0, 0, 180]) fillet(2, servoWidth*2+1);  // rounded corner (end, end)
+        translate([0, servoWidth, servoWidth]) rotate([0, 0, -90]) fillet(2, servoWidth*2+1);  // rounded corner (0, end)
         
         translate([(servoTotalLength-servoLength)/2, -0.5, -0.5])
         {
@@ -103,6 +123,21 @@ module duoServoMounting($fn=100)
         translate([servoTotalLength-(servoTotalLength-servoLength)/4, servoWidth/2, servoHeight-screwLength/2])
         {
             #cylinder(h = screwLength+1, d = screwHole, center = true);    // mounting holes right
+        }
+    }
+}
+
+// get round corners
+module fillet(r, h, $fn=100)
+{
+    translate([r / 2, r / 2, 0])
+    {
+        difference()
+        {
+            cube([r + 0.01, r + 0.01, h], center = true);
+
+            translate([r/2, r/2, 0])
+                cylinder(r = r, h = h + 1, center = true);
         }
     }
 }
